@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "typescript": "^5.6.2"
+  },
+  "name": "typescript-exercices",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-ts":"tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
