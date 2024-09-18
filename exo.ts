@@ -96,7 +96,7 @@ console.log("\n");
 
 
 /* exercice 7 */
-console.log("exercice n°7 : (utiliser les enums pour verifier les conditions selon les cas)\n");
+console.log("exercice n°7 : (utiliser les enums pour verifier la valeur booléenne selon les jours choisis)\n");
 
 enum Jour {
     Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi, Dimanche

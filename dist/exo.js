@@ -1,8 +1,9 @@
+"use strict";
 /*exercice 1*/
 console.log("exercice n°1 :(afficher des variables de differents types)\n");
-var nom = 'kamel';
-var taille = 171;
-var formation = true;
+let nom = 'kamel';
+let taille = 171;
+let formation = true;
 console.log("nom : " + nom + "\n" +
     "taille : " + taille + "\n" +
     "est en formation : " + formation + "\n");
@@ -11,21 +12,20 @@ console.log("exercice n°2 : (retourner resultat operation avec deux variables)\
 function soustraction(c, d) {
     return c + d;
 }
-var resultat = soustraction(5, 2);
+const resultat = soustraction(5, 2);
 console.log(" le resultat est :" + resultat + "\n");
 /* exercice 3 */
 console.log("exercice n°3 :\n");
-var lesMiserables = {
+let lesMiserables = {
     auteur: "victor hugo",
     type: "Roman",
     rangé: 25
 };
-console.log("livre produit par l'interface : ".concat(JSON.stringify(lesMiserables), "\n"));
+console.log(`livre produit par l'interface : ${JSON.stringify(lesMiserables)}\n`);
 /* exercice 4 */
 console.log("exercice n°4 : (affichage du tableau et boucle )\n");
-var classement = [1, 2, 3];
-for (var _i = 0, classement_1 = classement; _i < classement_1.length; _i++) {
-    var place = classement_1[_i];
+let classement = [1, 2, 3];
+for (const place of classement) {
     console.log("place numero : " + place);
 }
 /* exercice 5 */
@@ -47,7 +47,7 @@ function verifCouple(pierreMarie) {
         console.log("ce couple n'a pas d'enfants ");
     }
 }
-var couple = {
+const couple = {
     mari: "Pierre",
     femme: "Marie",
     enfants: false
@@ -56,7 +56,7 @@ verifCouple(couple);
 /*espacement  */
 console.log("\n");
 /* exercice 7 */
-console.log("exercice n°7 : (utiliser les enums pour verifier les conditions selon les cas)\n");
+console.log("exercice n°7 : (utiliser les enums pour verifier la valeur booléenne selon les jours choisis)\n");
 var Jour;
 (function (Jour) {
     Jour[Jour["Lundi"] = 0] = "Lundi";
@@ -70,9 +70,9 @@ var Jour;
 function estWeekend(jour) {
     return jour === Jour.Samedi || jour === Jour.Dimanche;
 }
-var jeudi = estWeekend(Jour.Jeudi);
+const jeudi = estWeekend(Jour.Jeudi);
 console.log(jeudi);
-var mardi = estWeekend(Jour.Mardi);
+const mardi = estWeekend(Jour.Mardi);
 console.log(jeudi);
-var samedi = estWeekend(Jour.Samedi);
+const samedi = estWeekend(Jour.Samedi);
 console.log(samedi);
