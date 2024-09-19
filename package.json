@@ -4,11 +4,10 @@
   },
   "name": "typescript-exercices",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "dist/exo2.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-ts":"tsc"
+    "build": "tsc",
+    "start":"node dist/exo2.js"
   },
   "keywords": [],
   "author": "",
